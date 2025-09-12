@@ -1,0 +1,21 @@
+{
+    "name": "dalton/demos",
+    "description": "A demo package showcasing PHPMailer integration with PHP 8.",
+    "type": "library",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Dalton\\Demos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "DMu1e",
+            "email": "daltonmulem@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "phpmailer/phpmailer": "^6.8"
+    }
+}

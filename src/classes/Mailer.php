@@ -1,6 +1,6 @@
 <?php
 
-namespace Dalton\Demos\classes;
+namespace Dalton\Work\classes;
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -8,13 +8,14 @@ use PHPMailer\PHPMailer\Exception;
 
 class Mailer
 {
-  private $mailer;
+  private PHPMailer $mailer;
 
   public function __construct()
   {
     $this->mailer = new PHPMailer(true);
 
     // SMTP configuration
+    $this->mailer->SMTPDebug = SMTP::DEBUG_SERVER;
     $this->mailer->isSMTP();
     $this->mailer->Host = "smtp.gmail.com";
     $this->mailer->SMTPAuth = true;
@@ -23,7 +24,7 @@ class Mailer
     $this->mailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $this->mailer->Port = 587;
 
-    $this->mailer->setFrom("adam.etyang@stratmore.edu", "App");
+    $this->mailer->setFrom("dalton.muindi@strathmore.edu", "App");
   }
 
   public function sendVerificationEmail($email, $name, $token)

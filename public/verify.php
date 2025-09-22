@@ -1,8 +1,8 @@
 <?php
 require_once "../vendor/autoload.php";
 
-use Dalton\Demos\classes\Database;
-use Dalton\Demos\classes\User;
+use Dalton\Work\classes\Database;
+use Dalton\Work\classes\User;
 
 $message = "";
 $messageType = "";

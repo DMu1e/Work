@@ -1,6 +1,6 @@
 <?php
 
-namespace Dalton\Demos\classes;
+namespace Dalton\Work\classes;
 
 use PDO;
 //use PDOException;

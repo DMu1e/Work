@@ -33,7 +33,7 @@ class Mailer
       $this->mailer->addAddress($email, $name);
 
       $verificationUrl =
-        "http://localhost/demos.localhost:8080/public/verify.php?token=" . $token;
+        "http://localhost/Work.http://localhost:8000/verify.php?token=" . $token;
 
       $this->mailer->isHTML(true);
       $this->mailer->Subject = "Confirm Your Registration";

@@ -56,7 +56,7 @@
 
     <section class="hero-section">
         <div class="container text-center">
-            <h1 class="display-4 fw-bold mb-4">Hello World</h1>
+            <h1 class="display-4 fw-bold mb-4">Welcome to my web app!</h1>
             <p class="lead mb-5">A simple application with email verification.</p>
             <a class="btn get-started-btn" href="signup.php">
                 Get Started <i class="fas fa-arrow-right ms-2"></i>

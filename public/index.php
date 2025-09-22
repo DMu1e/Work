@@ -45,7 +45,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="Mailer.php">
+            <a class="navbar-brand fw-bold" href="#">
                 <i class="fas fa-code me-2"></i>My PHP App
             </a>
             <div class="navbar-nav ms-auto">

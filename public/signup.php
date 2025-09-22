@@ -53,9 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     } catch (Exception $e) {
       $message = "An error occurred. Please try again.";
       $messageType = "danger";
-      error_log("Signup Error: " . $e->getMessage() . "\n" . $e->getTraceAsString());
-      // You can also temporarily display the error for debugging:
-      // $message = "Debug: " . $e->getMessage();
+      error_log($e->getMessage());
     }
   }
 }
@@ -89,16 +87,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <form method="POST">
               <div class="mb-3">
                 <label for="name" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="name" name="name" value="<?= htmlspecialchars(
-                  $_POST["name"] ?? "",
-                ) ?>" required>
+                <input type="text" class="form-control" id="name" name="name"
+                  value="<?= htmlspecialchars(
+                            $_POST["name"] ?? "",
+                          ) ?>" required>
               </div>
 
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" value="<?= htmlspecialchars(
-                  $_POST["email"] ?? "",
-                ) ?>" required>
+                <input type="email" class="form-control" id="email" name="email"
+                  value="<?= htmlspecialchars(
+                            $_POST["email"] ?? "",
+                          ) ?>" required>
               </div>
 
               <div class="mb-3">
